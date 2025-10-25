@@ -12,12 +12,12 @@ O trabalho deve ser realizado em grupos de no máximo 4 integrantes.
 
 Cada grupo deve selecionar um produto embarcado de uso cotidiano ou industrial, que utilize sensores e atuadores passíveis de reprodução com componentes simples (por exemplo: sensores de temperatura, umidade, luminosidade, movimento, motores DC, relés, displays, IMUs, etc.).
 
-Exemplos de categorias possíveis:
-	•	Termostatos inteligentes, estações meteorológicas, smart locks, dispositivos vestíveis;
-	•	Sistemas de irrigação automatizada;
-	•	Mini robôs móveis com sensores de distância;
-	•	Medidores ambientais ou de energia;
-	•	Dispositivos de automação residencial.
+Exemplos de categorias possíveis:  
+	•	Termostatos inteligentes, estações meteorológicas, smart locks, dispositivos vestíveis;  
+	•	Sistemas de irrigação automatizada;  
+	•	Mini robôs móveis com sensores de distância;  
+	•	Medidores ambientais ou de energia;  
+	•	Dispositivos de automação residencial.  
 
 **Sugestão**: Pesquisem a documentação dos produtos e dêem preferência para produtos mais antigos ou com documentação mais aberta. Produtos muito fechados tem documentação muito restrita.
 
@@ -44,8 +44,8 @@ O relatório deve conter os seguintes tópicos:
 4.	**Pesquisa bibliográfica e tecnológica:**  
 
 	Realizar uma pesquisa em publicações acadêmicas sobre:
-	1. 4 artigos científicos que detalhem uma ou mais de uma das principais tecnologias que viabilizam a existência do produto.
-	2. 4 artigos científicos sobre aplicação / uso do produto.
+	- 4 artigos científicos que detalhem uma ou mais de uma das principais tecnologias que viabilizam a existência do produto.
+	- 4 artigos científicos sobre aplicação / uso do produto.
 
 	Obs.: Pesquise em bases de pesquisas acadêmicas (Periódicos Capes, Scopus, IEEExplore, etc.), **artigos científicos publicados em revistas científicas** (Journals).
 
@@ -74,20 +74,20 @@ O trabalho deve ser todo desenvolvido em uma pasta com o nome do produto para qu
 - No corpo do texto do projeto deve constar o Nome Completo e Matrícula de cada integrante do grupo.
 
 2. **Formato dos arquivos**:
-    - Todos os arquivos devem ser inseridos em uma pasta do repositório criado à partir do FORK do repositório original do trabalho;
-    - A Pasta principal deve ser nomeado com o nome Abreviado do Produto (sem acento ou espaços);
-    - Arquivos de texto devem estar em Markdown;
-    - O arquivo principal em Markdown dentro da pasta do produto deve ter o nome padrão `README.md`. O trabalho pode ser estruturado em mais de um arquivo mas o principal deve seguir este padrão para poder ser indexado externamente;
-    - Arquivos auxiliares de imagens podem ser usados em qualquer formato padrão que possa ser renderizado pelo Gitlab (JPG, PNG, PDF);
+    - Todos os arquivos devem ser inseridos em uma pasta do repositório criado à partir do FORK do repositório original do trabalho;  
+    - A Pasta principal deve ser nomeado com o nome Abreviado do Produto (sem acento ou espaços);  
+    - Arquivos de texto devem estar em Markdown;  
+    - O arquivo principal em Markdown dentro da pasta do produto deve ter o nome padrão `README.md`. O trabalho pode ser estruturado em mais de um arquivo mas o principal deve seguir este padrão para poder ser indexado externamente;  
+    - Arquivos auxiliares de imagens podem ser usados em qualquer formato padrão que possa ser renderizado pelo Gitlab (JPG, PNG, PDF);  
 
-3. **Descrição do produto**: insiram uma ou mais fotos do produto escolhido na descrição do mesmo.
+3. **Descrição do produto**: insiram uma ou mais fotos do produto escolhido na descrição do mesmo.  
 
-4. Na **listagem das características** insiram link da referência bibliográfica onde constam os detalhes documentados além de inserir ao final do trabalho a referência bibliográfica.
+4. Na **listagem das características** insiram link da referência bibliográfica onde constam os detalhes documentados além de inserir ao final do trabalho a referência bibliográfica.  
 
-5. **Artigos acadêmicos**:
-    - Cada artigo deve ser apresentado com um resumo sobre o que o mesmo contribui ou como se relaciona com o produto apresentado.
-    - Insiram o link do PDF do artigo original no arquivo markdown.
-    - **Atenção**: Não façam upload do PDF para o repositório.
+5. **Artigos acadêmicos**:  
+    - Cada artigo deve ser apresentado com um resumo sobre o que o mesmo contribui ou como se relaciona com o produto apresentado.  
+    - Insiram o link do PDF do artigo original no arquivo markdown.  
+    - **Atenção**: Não façam upload do PDF para o repositório.  
 
 ## Critérios de Avaliação
 
@@ -101,6 +101,8 @@ O trabalho deve ser todo desenvolvido em uma pasta com o nome do produto para qu
 
 
 ## Links dos Trabalhos de Semestres anteriores:
+
+[Lista de Sensores e Atuadores Disponíveis](/Lista_de_Sensores.md)
 
 https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2025-1/trabalho-1-2025-1  
 
