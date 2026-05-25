@@ -65,7 +65,7 @@ O trabalho deve ser todo elaborado em um repositório (git) como fork deste repo
 
 O trabalho deve ser todo desenvolvido em uma pasta com o nome do produto para que possa ser submetido como MR a este repositório.
 
-**Data de Entrega: 10/11/2025**
+**Data de Entrega: 11/06/2026**
 
 ### Orientações específicas
 
