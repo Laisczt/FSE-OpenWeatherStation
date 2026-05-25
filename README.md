@@ -1,4 +1,4 @@
-# Trabalho 2 - 2025-2
+# Trabalho 2 - 2026-1
 
 ## 1. Objetivos
 
@@ -102,8 +102,8 @@ O trabalho deve ser todo desenvolvido em uma pasta com o nome do produto para qu
 
 ## Links dos Trabalhos de Semestres anteriores:
 
-[Lista de Sensores e Atuadores Disponíveis](/Lista_de_Sensores.md)
+- [Lista de Sensores e Atuadores Disponíveis](/Lista_de_Sensores.md)
 
-https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2025-1/trabalho-1-2025-1  
-
-https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2024_2/trabalho-1-2024-2  
+- [Trabalho 2025/2](https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2025_2/trabalho-2-2025-2)   
+- [Trabalho 2025/1](https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2025-1/trabalho-1-2025-1)  
+- [Trabalho 2024/2](https://gitlab.com/fse_fga/trabalhos-semestres-anteriores/trabalhos-2024_2/trabalho-1-2024-2)  
