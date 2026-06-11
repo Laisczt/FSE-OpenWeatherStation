@@ -1,4 +1,4 @@
-# Trabalho2-FSE
+# Open Weather Station
 
 ## Integrantes
 
@@ -11,11 +11,26 @@
 
 ## Descrição do produto
 
+Open Weather Station (OWS) é uma solução de monitoramento de fatores climáticos (e.g. velocidade do vendo, termperatura, precipitação, etc.) baseada em arduíno, criada com o intuito de ser
+mais barata, compacta, e amigável ao usuário que outras opções existentes no mercado. OWS é capaz de enviar telemetria sem fio ao servidor local ou integrar diretamente à serviços como Wunderground, Thingspeak, Windguru ou OpenWeatherMap.
+
 ###	Funções principais, público-alvo e contexto de uso
+
+**Informações coletadas**
+* Velocidade do vento(m/s)
+* Direção do vento (ângulo)
+* Rajada de vento (m/s)
+* Direção da rajada de vento (ângulo)
+* Chuva(mm)
+* Temperatura(ºC)
+* Pressão atmosférica(Pascal)
+* Humidade relativa(%)
+* Iluminação Ambiente(lux)
 
 ###	Componentes e sensores utilizados
 
 ###	Tecnologias de comunicação e controle embarcadas
+
 
 ## Análise técnica do funcionamento
 
