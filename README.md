@@ -5,15 +5,15 @@
 | Nome                                           | Matrícula |
 | ---------------------------------------------- | --------- |
 | [Laís Soares](https://github.com/Laisczt)      | 211029512 |
-| [Bruna Lima](https://github.com/libruna)       | -         |
+| [Bruna Lima](https://github.com/libruna)       | 211041105 |
 | [José Augusto](https://github.com/JAugustoM)   | 231026429 |
 | [Ana Catarina](https://github.com/an4catarina) | -         |
 
-## Descrição do produto
+## 1) Descrição do produto
 
 Open Weather Station (OWS) é uma solução de monitoramento de fatores climáticos (e.g. velocidade do vendo, termperatura, precipitação, etc.) utilizando um arduíno e um dispositivo móvel, criada com o intuito de sermais barata, compacta, e amigável ao usuário que outras opções existentes no mercado. OWS é capaz de enviar telemetria sem fio ao servidor local ou integrar diretamente à serviços como Wunderground, Thingspeak, Windguru ou OpenWeatherMap.
 
-### Funções principais, público-alvo e contexto de uso
+### 1.1) Funções principais, público-alvo e contexto de uso
 
 | Funcionalidade                    | Descrição                                                                                                   |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -32,7 +32,7 @@ Open Weather Station (OWS) é uma solução de monitoramento de fatores climáti
 - Humidade relativa(%)
 - Iluminação Ambiente(lux)
 
-### Componentes e sensores utilizados
+### 1.2) Componentes e sensores utilizados
 
 Abaixo está a lista dos principais componentes e sensores utilizados na OWS, o BoM completo do projeto pode ser visto neste [link](https://github.com/panchazo/open-weather-station#list-of-materials)
 
@@ -46,15 +46,15 @@ Abaixo está a lista dos principais componentes e sensores utilizados na OWS, o 
 | Arduino Uno R3        |     1      | Microcontrolador utilizado como unidade de processamento                    |
 | Módulo Bluetooth HC05 |     1      | Provê conectividade bluetooth ao dispositivo                                |
 
-### Tecnologias de comunicação e controle embarcadas
+### 1.3) Tecnologias de comunicação e controle embarcadas
 
 A comunicação com os sensores BH1705 e BME280 é feita utilizando comunicação I2C no mesmo barramento. O pluviômetro, a veleta e o anemômetro utilizam comunicação serial via conector RJ11.
 
 O envio de informações do sistema para o aplicativo é feita via bluetooth, utilizando o módulo HC05.
 
-## Análise técnica do funcionamento
+## 2) Análise técnica do funcionamento
 
-### Principais módulos do sistema
+### 2.1) Principais módulos do sistema
 
 O sistema original da OpenWeatherStation foi projetado em torno de componentes de fácil acesso e focava na comunicação local via Bluetooth. Ele é dividido nos seguintes módulos principais:
 
@@ -64,7 +64,7 @@ O sistema original da OpenWeatherStation foi projetado em torno de componentes d
 4. **Módulo de Comunicação Local**: Baseado no módulo Bluetooth HC05, que transmite os dados lidos pelo microcontrolador para um dispositivo próximo.
 5. **Módulo de Interface e Armazenamento (App Android)**: Um aplicativo de smartphone que pareava com a estação via Bluetooth para coletar, exibir e armazenar os dados climáticos.
 
-### Identificação de tecnologias críticas
+### 2.2) Identificação de tecnologias críticas
 
 Para o funcionamento adequado da versão original da **OpenWeatherStation**, as seguintes tecnologias e conceitos de hardware/software são considerados críticos para a arquitetura do projeto:
 
@@ -80,9 +80,9 @@ Para o funcionamento adequado da versão original da **OpenWeatherStation**, as 
 
 - **Aplicação Mobile Datalogger:** Uma vez que as placas baseadas na arquitetura Arduino clássica (como o Uno ou Nano) possuem uma memória extremamente limitada para guardar o histórico climático, o projeto original delega as funções de armazenamento de dados, relógio de tempo real (RTC) e interface gráfica para uma aplicação Android. O desenvolvimento desta aplicação é uma tecnologia crítica, pois atua como a unidade de processamento de alto nível do sistema, recebendo as _strings_ de dados brutos via Bluetooth, processando-as e exibindo-as no aplicativo mobile.
 
-## Proposta de reprodução com ESP32
+## 3) Proposta de reprodução com ESP32
 
-### Descrição conceitual de como as funcionalidades poderiam ser implementadas usando a ESP32 e componentes compatíveis com o ecossistema ESP-IDF;
+### 3.1) Descrição conceitual de como as funcionalidades poderiam ser implementadas usando a ESP32 e componentes compatíveis com o ecossistema ESP-IDF;
 
 A reprodução do sistema substituirá a arquitetura original baseada em Arduino/Bluetooth por uma solução baseada no ESP32, utilizando os sensores disponíveis.
 Sem a necessidade de uma interface visual local, o ESP32 operará como um módulo de sensoriamento, enviando dados diretamente para a rede.
@@ -93,16 +93,34 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
   1. **Integração em Nuvem (HTTP)**: Usando a biblioteca `esp_http_client.h`, o ESP32 montará as requisições POST formatadas de acordo com a API do WeatherUnderground, permitindo que os dados da estação sejam visíveis na plataforma.
   2. **Integração Local (MQTT)**: Usando a biblioteca nativa `mqtt_client.h`, o ESP32 empacotará os dados em uma string no formato JSON e publicará em um tópico de um broker MQTT local.
 
-### Diagrama conceitual do sistema
+### 3.2) Diagrama conceitual do sistema
 
 (pode ser esquemático ou em diarama de blocos);
 
-### Limitações e desafios esperados.
+### 3.3) Limitações e desafios esperados
 
 - **Falta de Medição de Umidade Relativa**: A restrição aos sensores da lista implica a ausência de um sensor capaz de medir a umidade relativa do ar (como os comumente usados DHT11 ou BME280 completo), limitando os dados providos pela estação.
 - **Dependência de Wi-Fi**: Como a estação enviará dados via HTTP para o WeatherUnderground ou via MQTT localmente, e não possui um display próprio para apresentar os dados, qualquer instabilidade na rede local irá impedir o envio das informações. Será necessário implementar no código uma lógica de reconexão robusta e, possivelmente, uma fila no FreeRTOS para não perder dados durante quedas curtas.
 - **Não Linearidade e Ruído no ADC**: A estimativa de luminosidade via LDR pode ser prejudicada pela não-linearidade do ADC do ESP32. O desafio será implementar curvas de calibração via software ou utilizar as APIs de calibração (`esp_adc_cal.h`) para amenizar esta limitação.
 
-## Pesquisa bibliográfica e tecnológica
+## 4) Pesquisa bibliográfica e tecnológica
 
-## Comparativo com produtos similares
+### 4.1) Artigos sobre tecnologia do produto
+
+#### Artigo 1: Análise Comparativa do Consumo de Energia entre os Protocolos MQTT e HTTP em uma Plataforma IoT
+
+- **Autores:** Heriberto J. Jara Ochoa, Raul Peña, Yoel Ledo Mezquita, Enrique Gonzalez, Sergio Camacho-Leon
+- **DOI e Acesso:** [10.3390/s23104896](https://www.mdpi.com/1424-8220/23/10/4896)
+
+- **Resumo:** O artigo apresenta uma análise comparativa entre os protocolos MQTT e HTTP em uma plataforma IoT destinada ao monitoramento remoto em tempo real no setor de transportes. Os autores desenvolveram e validaram um sistema embarcado baseado em NodeMCU para avaliar o impacto dos protocolos no consumo energético, considerando diferentes níveis de QoS do MQTT. Os resultados demonstraram que o MQTT apresentou maior eficiência energética, proporcionando uma economia de 6,03% com QoS 0 e 8,33% com QoS 1 em relação ao HTTP, o que contribui para o aumento da autonomia de dispositivos alimentados por bateria. Este trabalho foi selecionado porque analisa exatamente as duas abordagens de conectividade propostas para a nossa ESP32: a integração em nuvem com requisições POST via HTTP e a publicação em rede local via MQTT.
+
+### 4.2) Artigos sobre a aplicação / uso do produto
+
+#### Artigo 1: Estação Meteorológica Automática com Previsões Inteligentes
+
+- **Autores:** Thomas Alexandre da Silva, Andre L. M. Serrano, Erick R. C. Figueiredo, Geraldo P. Rocha Filho, Fábio L. L. de Mendonça, Rodolfo I. Meneguette 3 and Vinícius P. Gonçalves
+- **DOI e Acesso:** [10.3390/s25113432](https://www.mdpi.com/1424-8220/25/11/3432)
+
+- **Resumo:** O artigo apresenta o desenvolvimento de uma estação meteorológica automática de baixo custo baseada em um sistema embarcado alimentado por energia solar. A solução utiliza um microcontrolador integrado a diversos sensores ambientais para monitorar variáveis como temperatura, umidade, radiação ultravioleta, precipitação e qualidade do ar. Os dados coletados são processados e transmitidos em tempo real por meio de conexão Wi-Fi para uma plataforma Web, onde são armazenados e utilizados por um modelo de aprendizado de máquina capaz de gerar previsões meteorológicas para as próximas 24 horas. Os resultados demonstraram elevada estabilidade operacional, autonomia energética e boa concordância com os dados de estações meteorológicas oficiais. Como aplicação em sistemas embarcados, o trabalho evidencia a utilização de hardware de baixo custo, comunicação sem fio, sensoriamento distribuído e processamento inteligente de dados para monitoramento ambiental.
+
+## 5) Comparativo com produtos similares
