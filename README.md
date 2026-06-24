@@ -13,6 +13,10 @@
 
 Open Weather Station (OWS) é uma solução de monitoramento de fatores climáticos (e.g. velocidade do vendo, termperatura, precipitação, etc.) utilizando um arduíno e um dispositivo móvel, criada com o intuito de sermais barata, compacta, e amigável ao usuário que outras opções existentes no mercado. OWS é capaz de enviar telemetria sem fio ao servidor local ou integrar diretamente à serviços como Wunderground, Thingspeak, Windguru ou OpenWeatherMap.
 
+![Open Weather Station](media/openweatherstation_presentation.jpg)
+
+_Figura 1: Open Weather Station. Fonte: Francisco Clariá (2024)_
+
 ### 1.1) Funções principais, público-alvo e contexto de uso
 
 | Funcionalidade                    | Descrição                                                                                                   |
@@ -45,6 +49,12 @@ Abaixo está a lista dos principais componentes e sensores utilizados na OWS, o 
 | Pluviômetro WS 1080   |     1      | Utilizado para medir o volume de chuva                                      |
 | Arduino Uno R3        |     1      | Microcontrolador utilizado como unidade de processamento                    |
 | Módulo Bluetooth HC05 |     1      | Provê conectividade bluetooth ao dispositivo                                |
+
+Abaixo está o esquemático completo do sistema:
+
+![Esquemático OWS](media/circuit_diagram.png)
+
+_Figura 2: Esquemático da OWS. Fonte: Francisco Clariá (2024)_
 
 ### 1.3) Tecnologias de comunicação e controle embarcadas
 
@@ -114,6 +124,14 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 - **Resumo:** O artigo apresenta uma análise comparativa entre os protocolos MQTT e HTTP em uma plataforma IoT destinada ao monitoramento remoto em tempo real no setor de transportes. Os autores desenvolveram e validaram um sistema embarcado baseado em NodeMCU para avaliar o impacto dos protocolos no consumo energético, considerando diferentes níveis de QoS do MQTT. Os resultados demonstraram que o MQTT apresentou maior eficiência energética, proporcionando uma economia de 6,03% com QoS 0 e 8,33% com QoS 1 em relação ao HTTP, o que contribui para o aumento da autonomia de dispositivos alimentados por bateria. Este trabalho foi selecionado porque analisa exatamente as duas abordagens de conectividade propostas para a nossa ESP32: a integração em nuvem com requisições POST via HTTP e a publicação em rede local via MQTT.
 
+#### Artigo 2: A Programmable Plug & Play Sensor Interface for WSN Applications
+
+- **Autores:** Cornetta, G.,  Fatimi, S.,  Kochaji, A.,  Moussa, O.,  Almaleky, M.S., Lamrini, M. e Touhafi, A.
+- **DOI e Acesso:** [10.3390/hardware3040013](https://doi.org/10.3390/hardware3040013)
+
+- **Resumo:** O artigo descreve um módulo de hardware e interface programável projetado para converter as leituras analógicas puras de sensores de baixo custo em um formato digital legível por microcontroladores de rede. O sistema foca em tratar diferentes faixas de tensão na saída dos sensores através de ajustes de ganho, criando compatibilidade elétrica direta com as portas lógicas da unidade de controle. Este trabalho foi selecionado porque fornece um embasamento científico direto para a tecnologia dos conversores analógico-digitais (ADC) e divisores de tensão. Essa tecnologia é crítica para a Open Weather Station, pois é o que permite mapear sinais de variação de voltagem (como os gerados pela veleta de direção do vento e pelo sensor de luminosidade) em valores numéricos que podem ser decodificados e processados pela ESP32.
+
+
 ### 4.2) Artigos sobre a aplicação / uso do produto
 
 #### Artigo 1: Estação Meteorológica Automática com Previsões Inteligentes
@@ -122,5 +140,17 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 - **DOI e Acesso:** [10.3390/s25113432](https://www.mdpi.com/1424-8220/25/11/3432)
 
 - **Resumo:** O artigo apresenta o desenvolvimento de uma estação meteorológica automática de baixo custo baseada em um sistema embarcado alimentado por energia solar. A solução utiliza um microcontrolador integrado a diversos sensores ambientais para monitorar variáveis como temperatura, umidade, radiação ultravioleta, precipitação e qualidade do ar. Os dados coletados são processados e transmitidos em tempo real por meio de conexão Wi-Fi para uma plataforma Web, onde são armazenados e utilizados por um modelo de aprendizado de máquina capaz de gerar previsões meteorológicas para as próximas 24 horas. Os resultados demonstraram elevada estabilidade operacional, autonomia energética e boa concordância com os dados de estações meteorológicas oficiais. Como aplicação em sistemas embarcados, o trabalho evidencia a utilização de hardware de baixo custo, comunicação sem fio, sensoriamento distribuído e processamento inteligente de dados para monitoramento ambiental.
+
+#### Artigo 2: Sustainable agriculture from the bottom up: a compact and versatile low-cost platform for agricultural monitoring
+
+- **Autores**: Kretzschmar M, Dubbert M, Lück M, Asante M, Sossa G e Hoffmann M
+- **DOI e Acesso:** [10.3389/fagro.2026.1768276](https://www.frontiersin.org/journals/agronomy/articles/10.3389/fagro.2026.1768276/full)
+
+- **Resumo:** O artigo apresenta uma análise da viabilidade do uso de estações meteorológicas DIY de baixa custo como alternativa para estações profissionais de alto custo.
+  O artigo utiliza uma solução própria, a *Environmental Variables Explorer* (EVE), baseada no uso de um microcontrolador ESP32. A EVE é capaz de coletar informações sobre 
+  radiação solar, temperatura do ar, umidade relativa e pressão do ar, e é capaz de operar de forma offline, armazenando os dados na memória FRAM interna, ou online via conexão
+  Wi-Fi a um dashboard que pode ser executado localmente pelo usuário. Os resultados do artigo demonstraram que a solução implementada pelos pesquisadores alcançou altos níveis
+  de precisão em condições ideais, também foi demonstrado que a solução possui uma confiabilidade satisfatória em relação a estabilidade das coletas de dados e ao manejo dos 
+  dados coletados.
 
 ## 5) Comparativo com produtos similares
