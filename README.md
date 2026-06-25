@@ -7,11 +7,11 @@
 | [Laís Soares](https://github.com/Laisczt)      | 211029512 |
 | [Bruna Lima](https://github.com/libruna)       | 211041105 |
 | [José Augusto](https://github.com/JAugustoM)   | 231026429 |
-| [Ana Catarina](https://github.com/an4catarina) | -         |
+| [Ana Catarina](https://github.com/an4catarina) | 211041099 |
 
 ## 1) Descrição do produto
 
-Open Weather Station (OWS) é uma solução de monitoramento de fatores climáticos (e.g. velocidade do vendo, termperatura, precipitação, etc.) utilizando um arduíno e um dispositivo móvel, criada com o intuito de sermais barata, compacta, e amigável ao usuário que outras opções existentes no mercado. OWS é capaz de enviar telemetria sem fio ao servidor local ou integrar diretamente à serviços como Wunderground, Thingspeak, Windguru ou OpenWeatherMap.
+Open Weather Station (OWS) é uma solução de monitoramento de fatores climáticos (e.g. velocidade do vendo, termperatura, precipitação, etc.) utilizando um arduíno e um dispositivo móvel, criada com o intuito de ser mais barata, compacta, e amigável ao usuário que outras opções existentes no mercado. OWS é capaz de enviar telemetria sem fio ao servidor local ou integrar diretamente à serviços como Wunderground, Thingspeak, Windguru ou OpenWeatherMap.
 
 ![Open Weather Station](media/openweatherstation_presentation.jpg)
 
@@ -131,6 +131,14 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 - **Resumo:** O artigo descreve um módulo de hardware e interface programável projetado para converter as leituras analógicas puras de sensores de baixo custo em um formato digital legível por microcontroladores de rede. O sistema foca em tratar diferentes faixas de tensão na saída dos sensores através de ajustes de ganho, criando compatibilidade elétrica direta com as portas lógicas da unidade de controle. Este trabalho foi selecionado porque fornece um embasamento científico direto para a tecnologia dos conversores analógico-digitais (ADC) e divisores de tensão. Essa tecnologia é crítica para a Open Weather Station, pois é o que permite mapear sinais de variação de voltagem (como os gerados pela veleta de direção do vento e pelo sensor de luminosidade) em valores numéricos que podem ser decodificados e processados pela ESP32.
 
+#### Artigo 3: ESP32-Based Unified IoT Platform for Weather and Air Quality Monitoring with LoRa and MQTT
+
+* **Autores:** Adedeji, K. B., & Ponnle, A. A.
+
+* **DOI e Acesso:** [10.3390/s24092729](https://www.mdpi.com/1424-8220/24/9/2729).
+
+* **Resumo:** O artigo apresenta uma plataforma IoT para monitoramento meteorológico e da qualidade do ar utilizando dispositivos da família ESP e protocolos de comunicação como MQTT. A arquitetura integra ferramentas para armazenamento, processamento e visualização dos dados, além de mecanismos para aumentar a confiabilidade da transmissão das informações coletadas. Este trabalho foi selecionado por fornecer embasamento para o uso de comunicação IoT na Open Weather Station, especialmente na integração da ESP32 com protocolos como HTTP e MQTT.
+
 
 ### 4.2) Artigos sobre a aplicação / uso do produto
 
@@ -152,5 +160,14 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
   Wi-Fi a um dashboard que pode ser executado localmente pelo usuário. Os resultados do artigo demonstraram que a solução implementada pelos pesquisadores alcançou altos níveis
   de precisão em condições ideais, também foi demonstrado que a solução possui uma confiabilidade satisfatória em relação a estabilidade das coletas de dados e ao manejo dos 
   dados coletados.
+
+#### Artigo 3: **Real-Time Air Quality and Weather Monitoring System Utilizing IoT for Sustainable Urban Development and Environmental Management**
+
+* **Autores:** Akash Ram Kondeti, Leelavathi Rudraksha, Silpa Chinnaiahgari e Anitha Bujunuru
+
+* **DOI e Acesso:** [10.3390/ECSA-12-26599](https://www.mdpi.com/2673-4591/118/1/56)
+
+* **Resumo:** O artigo descreve um sistema portátil de monitoramento ambiental baseado em ESP32 que coleta dados como temperatura, umidade, qualidade do ar e luminosidade e os envia via Wi-Fi para plataformas em nuvem. A solução também permite o acompanhamento remoto das medições em tempo real por meio de uma aplicação móvel. Este trabalho foi selecionado por apresentar uma aplicação semelhante à proposta da Open Weather Station, demonstrando o uso de sensores ambientais, comunicação sem fio e integração com serviços em nuvem.
+
 
 ## 5) Comparativo com produtos similares
