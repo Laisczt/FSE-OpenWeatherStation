@@ -139,6 +139,12 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 * **Resumo:** O artigo apresenta uma plataforma IoT para monitoramento meteorológico e da qualidade do ar utilizando dispositivos da família ESP e protocolos de comunicação como MQTT. A arquitetura integra ferramentas para armazenamento, processamento e visualização dos dados, além de mecanismos para aumentar a confiabilidade da transmissão das informações coletadas. Este trabalho foi selecionado por fornecer embasamento para o uso de comunicação IoT na Open Weather Station, especialmente na integração da ESP32 com protocolos como HTTP e MQTT.
 
+#### Artigo 4: Development of ICT for Leaching Monitoring in Taiwan Agricultural LTER Stations
+
+- **Autores:** Chan Y, Hu J, Chou C, Liao C e Chen C
+- **DOI e Acesso:** [10.3390/environments4030047](https://www.mdpi.com/2076-3298/4/3/47)
+
+- **Resumo:** O artigo acompanha o desenvolvimento de um sistema de monitoramento de lixiviação agrícola no Taiwan, uma operação que ocorre desde 2008 e, inicialmente, necessitava que trabalhadores coletassem manualmente os dados de sensores em campo duas vezes ao mês. Essa abordagem era cara, a manutenção dos sensores era ineficiente, e monitoramento em tempo real era impossível. Eventualmente, 3 versões de sistemas ICT foram desenvolvidos que abordam esses problemas, porém cada uma sofria de detrimentos causados pelas tecnologias específicas escolhidas. Finalmente, a quarta versão foi desenvolvida utilizando uma plataforma arduino, RF 2.4GHz rede móvel 4G. Esta versão ostente menor custo, consumo de energia e mais facilidade de expansão que suas predecessoras.
 
 ### 4.2) Artigos sobre a aplicação / uso do produto
 
@@ -169,5 +175,11 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 * **Resumo:** O artigo descreve um sistema portátil de monitoramento ambiental baseado em ESP32 que coleta dados como temperatura, umidade, qualidade do ar e luminosidade e os envia via Wi-Fi para plataformas em nuvem. A solução também permite o acompanhamento remoto das medições em tempo real por meio de uma aplicação móvel. Este trabalho foi selecionado por apresentar uma aplicação semelhante à proposta da Open Weather Station, demonstrando o uso de sensores ambientais, comunicação sem fio e integração com serviços em nuvem.
 
+#### Artigo 4: Contribution of personal weather stations to the observation of deep-convection features near the ground
+
+- **Autores:** Mandement M e Caumont O
+- **DOI e Acesso: ** [10.5194/nhess-20-299-2020](https://doi.org/10.5194/nhess-20-299-2020)
+
+- **Resumo:** O artigo avalia a contribuição de PWSs à observação de convecção profunda na atmosfera - um fenômeno difícil de se medir devido a esparcidade de sensores próximos ao solo. Entra os PWSs, que apesar de sofrer com qualidade de medições reduzidas em comparação a aparelhos meteorológicos de pesquisa, oferecem uma densidade de medições muito desejada. As razões responsáveis por essa qualidade inferior incluem: exposição ao sol ou fontes de calor, condições do solo, ventilação, falta de manutenção e calibração. Os autores apresentam sua avaliação na forma de estudos de caso: 4 tempestades/grupos de tempestades sobre a frança cujos sinais de formação foram detectados por redes de PWSs muito antes de aparecerem em aparelhos de estações meteorológicas. O artigo ressalta, porém, que os dados brutos de PWSs devem ser processados e refinados antes que possam ser integrados aos dados de estações meteorológicas.
 
 ## 5) Comparativo com produtos similares
