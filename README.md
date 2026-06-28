@@ -178,7 +178,7 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 #### Artigo 4: Contribution of personal weather stations to the observation of deep-convection features near the ground
 
 - **Autores:** Mandement M e Caumont O
-- **DOI e Acesso: ** [10.5194/nhess-20-299-2020](https://doi.org/10.5194/nhess-20-299-2020)
+- **DOI e Acesso:** [10.5194/nhess-20-299-2020](https://doi.org/10.5194/nhess-20-299-2020)
 
 - **Resumo:** O artigo avalia a contribuição de PWSs à observação de convecção profunda na atmosfera - um fenômeno difícil de se medir devido a esparcidade de sensores próximos ao solo. Entra os PWSs, que apesar de sofrer com qualidade de medições reduzidas em comparação a aparelhos meteorológicos de pesquisa, oferecem uma densidade de medições muito desejada. As razões responsáveis por essa qualidade inferior incluem: exposição ao sol ou fontes de calor, condições do solo, ventilação, falta de manutenção e calibração. Os autores apresentam sua avaliação na forma de estudos de caso: 4 tempestades/grupos de tempestades sobre a frança cujos sinais de formação foram detectados por redes de PWSs muito antes de aparecerem em aparelhos de estações meteorológicas. O artigo ressalta, porém, que os dados brutos de PWSs devem ser processados e refinados antes que possam ser integrados aos dados de estações meteorológicas.
 
