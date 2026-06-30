@@ -19,10 +19,11 @@ _Figura 1: Open Weather Station. Fonte: Francisco Clariá (2024)_
 
 ### 1.1) Funções principais, público-alvo e contexto de uso
 
-| Funcionalidade                    | Descrição                                                                                                   |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Comunicação sem fio               | O OWS é capaz de transmitir suas informações por meio de wi-fi ou rede móvel, a partir do dispositivo móvel |
-| Visualização de dados/diagnóstico | O aplicativo móvel permite também a visualização dos dados em gráficos, e o diagnóstico do sistema arduino  |
+| Funcionalidade                    | Descrição                                                                                                      |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Comunicação sem fio               | O OWS é capaz de transmitir suas informações por meio de wi-fi ou rede móvel 4G, a partir do dispositivo móvel |
+| Visualização de dados/diagnóstico | O aplicativo móvel permite a visualização dos dados em gráficos, e o diagnóstico do sistema arduino            |
+| Integração com mapas abertos      | O formato de dados gerados é compatível com Wunderground, Thingspeak, Windguru e OpenWeatherMap                |
 
 **Informações coletadas**
 
@@ -38,7 +39,7 @@ _Figura 1: Open Weather Station. Fonte: Francisco Clariá (2024)_
 
 ### 1.2) Componentes e sensores utilizados
 
-Abaixo está a lista dos principais componentes e sensores utilizados na OWS, o BoM completo do projeto pode ser visto neste [link](https://github.com/panchazo/open-weather-station#list-of-materials)
+Abaixo está a lista dos principais componentes e sensores utilizados na OWS, o BoM completo do projeto - incluindo fios, capacitores e componentes estruturais - pode ser visto neste [link](https://github.com/panchazo/open-weather-station#list-of-materials)
 
 | Componente            | Quantidade | Uso                                                                         |
 | :-------------------- | :--------: | :-------------------------------------------------------------------------- |
