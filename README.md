@@ -117,7 +117,7 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 ### 4.1) Artigos sobre tecnologia do produto
 
-#### Artigo 1: Análise Comparativa do Consumo de Energia entre os Protocolos MQTT e HTTP em uma Plataforma IoT
+#### Artigo 1: Comparative Analysis of Power Consumption between MQTT and HTTP Protocols in an IoT Platform Designed and Implemented for Remote Real-Time Monitoring of Long-Term Cold Chain Transport Operations
 
 - **Autores:** Heriberto J. Jara Ochoa, Raul Peña, Yoel Ledo Mezquita, Enrique Gonzalez, Sergio Camacho-Leon
 - **DOI e Acesso:** [10.3390/s23104896](https://www.mdpi.com/1424-8220/23/10/4896)
@@ -148,7 +148,7 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 ### 4.2) Artigos sobre a aplicação / uso do produto
 
-#### Artigo 1: Estação Meteorológica Automática com Previsões Inteligentes
+#### Artigo 1: New Model for Weather Stations Integrated to Intelligent Meteorological Forecasts in Brasília
 
 - **Autores:** Thomas Alexandre da Silva, Andre L. M. Serrano, Erick R. C. Figueiredo, Geraldo P. Rocha Filho, Fábio L. L. de Mendonça, Rodolfo I. Meneguette 3 and Vinícius P. Gonçalves
 - **DOI e Acesso:** [10.3390/s25113432](https://www.mdpi.com/1424-8220/25/11/3432)
@@ -183,3 +183,40 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 - **Resumo:** O artigo avalia a contribuição de PWSs à observação de convecção profunda na atmosfera - um fenômeno difícil de se medir devido a esparcidade de sensores próximos ao solo. Entra os PWSs, que apesar de sofrer com qualidade de medições reduzidas em comparação a aparelhos meteorológicos de pesquisa, oferecem uma densidade de medições muito desejada. As razões responsáveis por essa qualidade inferior incluem: exposição ao sol ou fontes de calor, condições do solo, ventilação, falta de manutenção e calibração. Os autores apresentam sua avaliação na forma de estudos de caso: 4 tempestades/grupos de tempestades sobre a frança cujos sinais de formação foram detectados por redes de PWSs muito antes de aparecerem em aparelhos de estações meteorológicas. O artigo ressalta, porém, que os dados brutos de PWSs devem ser processados e refinados antes que possam ser integrados aos dados de estações meteorológicas.
 
 ## 5) Comparativo com produtos similares
+
+| Produto | Objetivo | Sensores principais | Comunicação | Alimentação | Diferencial | Preço Médio (USD) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: |
+| **Open Weather Station** | Medir, monitorar, armazenar dados e enviá-los para servidores próprios ou redes meteorológicas | Temperatura, Umidade, Pressão, Luminosidade, Pluviometria, Anemometria | Bluetooth + Wi-Fi (via smartphone) | USB (Power Bank) + suporte a painel solar | Hardware e software open source, totalmente personalizáveis | ~400 |
+| **Ambient Weather WS-2902** | Fornecer um pacote residencial completo que capta os dados externos e os publica automaticamente em redes meteorológicas e assistentes virtuais | Temperatura, Umidade, Pressão, Chuva, Vento, Radiação Solar, Índice UV | RF + Wi-Fi (via console) | Painel solar + pilhas AA | Solução pronta para uso com integração ao Ambient Weather Network | ~199 |
+| **Davis Vantage Pro2 (6252/6252M)** | Assegurar medições ininterruptas com precisão e alta resistência física para pesquisas, agricultura e uso profissional | Temperatura, Umidade, Pressão, Chuva, Vento | Rádio FHSS + WeatherLink Console | Painel solar + bateria CR123A (backup) | Precisão profissional, sensores rastreáveis ao NIST e alta robustez | ~1.035 |
+| **Ecowitt GW1101** | Coletar dados de sensores modulares e entregar o controle da rede ao usuário, facilitando o envio direto das informações para servidores HTTP locais | Temperatura, Umidade, Pressão, Chuva, Vento, Radiação Solar, Índice UV | RF + Wi-Fi (via gateway) | Painel solar + 2 pilhas AA + USB | Arquitetura modular com suporte a servidor HTTP personalizado | ~179 |
+| **Netatmo Smart Weather Station** | Avaliar as condições climáticas externas e a qualidade do ar interno para acionar rotinas de automação em ecossistemas de casas inteligentes | Temperatura, Umidade, Pressão, CO2, Ruído | Wi-Fi nativo | USB (módulo interno) + pilhas AAA (módulos externos) | Integração com ecossistemas de casa inteligente | ~149 |
+| **Tempest Weather Station** | Fornecer uma estação residencial de alta tecnologia e manutenção física zero, voltada para integração com sistemas de casa inteligente e redes meteorológicas | Temperatura, Umidade, Pressão, Vento, Chuva, Índice UV, Iluminância, Raios | RF + Wi-Fi (via hub) | 4 painéis solares + bateria LTO integrada | Sensores de estado sólido (ultrassônicos e hápticos), sem peças móveis | ~349 |
+
+### Análise Comparativa
+
+A Open Weather Station diferencia-se por sua arquitetura open source e pelo baixo custo de implementação. Suas principais vantagens incluem a flexibilidade na personalização do projeto, a facilidade de reparo com componentes comuns e o controle dos dados, livre de serviços proprietários em nuvem.
+
+Em contraste, as opções comerciais atendem a públicos específicos, possuem custos maiores e funcionam de forma mais restrita:
+
+- **Ambient Weather WS-2902:** Oferece uma solução tradicional de bom custo-benefício para uso residencial. É um equipamento fácil de instalar, mas vincula o acesso aos dados aos servidores da própria marca.
+
+- **Davis Vantage Pro2:** É a opção voltada para uso profissional. Destaca-se pela alta precisão das medidas e pela resistência mecânica para suportar climas adversos ao longo dos anos.
+
+- **Ecowitt GW1101:** Apresenta um formato flexível. Permite montar a estação por etapas e facilita o envio das informações climáticas direto para o computador local do usuário, sem a necessidade de nuvens externas.
+
+- **Netatmo Smart Home Weather Station:** Foca no design e na integração com casas inteligentes. Seu diferencial é incluir sensores para o ambiente interno, com leitura de CO2 e ruído, porém restringe o usuário aos aplicativos da própria marca.
+
+- **Tempest Weather Station:** Não possui peças móveis, como hélices. Utiliza tecnologias como o ultrassom para verificar o clima, o que evita desgastes físicos ou falhas mecânicas.
+
+## 6) Referências bibliográficas
+
+[1] AMBIENT WEATHER. Ambient Weather WS-2902 Home. Disponível em: https://ambientweather.com/ws-2902-smart-weather-station. Acesso em: 29 jun. 2026.
+
+[2] DAVIS INSTRUMENTS. Wireless Vantage Pro2 Weather Station. Disponível em: https://www.davisinstruments.com/products/wireless-vantage-pro2-weather-station-with-standard-radiation-shield-and-weatherlink-console. Acesso em: 29 jun. 2026.
+
+[3] ECOWITT. GW1101. Disponível em: https://www.ecowitt.com/shop/goodsDetail/244. Acesso em: 29 jun. 2026.
+
+[4] NETATMO. Smart Home Weather Station. Disponível em: https://www.netatmo.com/smart-weather-station. Acesso em: 29 jun. 2026.
+
+[5] TEMPEST. Tempest Weather Station. Disponível em: https://shop.tempest.earth/products/tempest. Acesso em: 29 jun. 2026.
