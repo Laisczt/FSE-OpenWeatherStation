@@ -213,10 +213,28 @@ Em contraste, as opções comerciais atendem a públicos específicos, possuem c
 
 [1] AMBIENT WEATHER. Ambient Weather WS-2902 Home. Disponível em: https://ambientweather.com/ws-2902-smart-weather-station. Acesso em: 29 jun. 2026.
 
-[2] DAVIS INSTRUMENTS. Wireless Vantage Pro2 Weather Station. Disponível em: https://www.davisinstruments.com/products/wireless-vantage-pro2-weather-station-with-standard-radiation-shield-and-weatherlink-console. Acesso em: 29 jun. 2026.
+[2] CLARIÁ, Francisco. **Open Weather Station**. Disponível em: https://github.com/panchazo/open-weather-station. Acesso em: 28 jun. 2026
 
-[3] ECOWITT. GW1101. Disponível em: https://www.ecowitt.com/shop/goodsDetail/244. Acesso em: 29 jun. 2026.
+[3] CHAN, Yankuang et al. **Development of ICT for Leaching Monitoring in Taiwan Agricultural LTER Stations**. Taiwan Agriculture Research Institute. Taichung, Taiwan. 30 jun. 2027. doi: https://doi.org/10.3390/environments4030047.
 
-[4] NETATMO. Smart Home Weather Station. Disponível em: https://www.netatmo.com/smart-weather-station. Acesso em: 29 jun. 2026.
+[4] CORNETTA, Giancula et al. **An Open-Source Educational Platform for Multi-Sensor Environmental Monitoring Applications**. Universidad CEU San Pablo. Madrid, Espanha. 15 out. 2025. doi: https://doi.org/10.3390/hardware3040013.
 
-[5] TEMPEST. Tempest Weather Station. Disponível em: https://shop.tempest.earth/products/tempest. Acesso em: 29 jun. 2026.
+[5] DA SILVA, Thomas Alexandre et al. **New Model for Weather Stations Integrated to Intelligent Meteorological Forecasts in Brasilia**. Universidade de Brasília. Brasília, Brasil. 29 maio 2025. doi: https://doi.org/10.3390/s25113432.
+
+[6] DAVIS INSTRUMENTS. Wireless Vantage Pro2 Weather Station. Disponível em: https://www.davisinstruments.com/products/wireless-vantage-pro2-weather-station-with-standard-radiation-shield-and-weatherlink-console. Acesso em: 29 jun. 2026.
+
+[7] ECOWITT. GW1101. Disponível em: https://www.ecowitt.com/shop/goodsDetail/244. Acesso em: 29 jun. 2026.
+
+[8] KAIRUZ-CABRERA, David et al. **Development of a Unified IoT Platform for Assessing Meteorological and Air Quality Data in a Tropical Environment**. Universidad Central "Marta Abreu" de Las Villas. Santa Clara, Cuba. 25 abril 2024. doi: https://doi.org/10.3390/s24092729.
+
+[9] KONDETI, A; RUDRAKSHA, L; CHINNAIAHGARI, S; BUJUNURU, A. **Real-Time Air Quality and Weather Monitoring System Utilizing IoT for Sustainable Urban Development and Environmental Management**. Vasavi College of Engineering. Hydebarad, India. 7 nov. 2025. doi: https://doi.org/10.3390/ECSA-12-26599
+
+[10] KRETZSCHMAR, Milan et al. **Sustainable agriculture from the bottom up: a compact and versatile low-cost platform for agricultural monitoring**. Leibniz Center for Agricultural and Landscape Research (ZALF). Müncheberg, Alemanha. 14 abril 2026. doi: https://doi.org/10.3389/fagro.2026.1768276
+
+[11] MANDEMENT, Marc; CAUMONT, Olivier. **Contribution of personal weather stations to the observation of deep-convection features near the ground**. Natural Hazards and Earth System Sciences, v 20, p 299–322. 24 jan. 2020. doi: https://doi.org/10.5194/nhess-20-299-2020
+
+[12] NETATMO. Smart Home Weather Station. Disponível em: https://www.netatmo.com/smart-weather-station. Acesso em: 29 jun. 2026.
+
+[13] OCHOA, H. et al. **Comparative Analysis of Power Consumption between MQTT and HTTP Protocols in an IoT Platform Designed and Implemented for Remote Real-Time Monitoring of Long-Term Cold Chain Transport Operations**. Tecnologico de Monterrey. Monterrey, México. 19 maio 2023. doi: https://doi.org/10.3390/s23104896.
+
+[14] TEMPEST. Tempest Weather Station. Disponível em: https://shop.tempest.earth/products/tempest. Acesso em: 29 jun. 2026.
