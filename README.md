@@ -107,6 +107,7 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 ### 3.2) Diagrama conceitual do sistema
 
 ![Diagrama conceitual](media/weatherstation_diagram.png)
+_Figura 3: Diagrama de blocos da reprodução da OWS com ESP32._
 
 ### 3.3) Limitações e desafios esperados
 
