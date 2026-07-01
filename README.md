@@ -106,7 +106,7 @@ Sem a necessidade de uma interface visual local, o ESP32 operará como um módul
 
 ### 3.2) Diagrama conceitual do sistema
 
-(pode ser esquemático ou em diarama de blocos);
+![Diagrama conceitual](media/weatherstation_diagram.png)
 
 ### 3.3) Limitações e desafios esperados
 
